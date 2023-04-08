@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru" >
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap" rel="stylesheet"> 
+<meta charset="UTF-8">
+<title>Название страницы - отображается на вкладке браузера и в поиске</title>
+<style type="text/css">
+
+a{
+color: #fff;
+text-decoration: none;
+}
+html{
+background: #87CEEB;
+min-height: 100%;
+font-family: '112', sans-serif;
+display: flex;
+flex-direction: column;
+}
+body{
+background-image: url("fon.jpg");
+background-attachment: fixed;
+margin: 0;
+padding: 0 15px;
+display: flex;
+flex-direction: column;
+flex: auto;
+}
+h1{
+margin-top: 0;
+}
+h1, p{
+color: #000;
+}
+img{
+border: 0;
+width: 100%;
+}
+.header{
+border: 5px solid transparent;
+border-image: linear-gradient(#8B008B ,#0000CD);
+border-image-slice: 1;
+background: #343834;
+background-repeat: repeat;
+background-size: 100% 100%;
+position: sticky;
+top: 0;
+width: 100%;
+min-width: 460px;
+max-width: 1080px;
+margin: 0 auto 0;
+padding: 10px 0 10px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+box-sizing: border-box;
+}
+.logo{
+border: 5px solid transparent;
+border-image: linear-gradient(#ff4cf3 , #dd0b6c);
+border-image-slice: 1;
+font-size: 1.8rem;
+color: #fff;
+text-decoration: none;
+margin: 0px 0 0 10px;
+justify-content: center;
+align-items: center;
+display: flex;
+flex: none;
+align-items: center;
+background: #483D8B;
+width: 180px;
+height: 90px;
+}
+.nav{
+margin: 10px 10px 0px 0px;
+display: flex;
+flex-wrap: wrap;
+}
+.nav-item{
+border: 3px solid transparent;
+border-image: linear-gradient(#8B008B , #6A5ACD);
+border-image-slice: 1;
+background: #BA55D3;
+width: 150px;
+height: 70px;
+font-size: 1.5rem;
+color: #fff;
+text-decoration: none;
+display: flex;
+flex: none;
+margin: 2px 0 0 10px;
+justify-content: center;
+align-items: center;
+}
+.sqr{
+height: 300px;
+width: 300px;
+background: #FFDB89;
+}
+
+.main{
+background-color: #FFFFFF;
+width: 100%;
+min-width: 460px;
+max-width: 1000px;
+margin: auto;
+margin-top: 0;
+flex: auto;
+box-sizing: border-box;
+}
+.box{
+font-size: 1.25rem;
+line-height: 1.5;
+margin: 0 0 40px -50px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.box-base{
+padding: 0 0 0 15px;
+margin-left: 50px;
+flex: 1 0 430px;
+}
+.box-side{
+margin-left: 50px;
+padding: 50px 15px 0 0;
+font: none;
+}
+.box-img{
+max-width: 100%;
+height: auto;
+}
+.content{
+margin-bottom: 30px;
+display: flex;
+flex-wrap: wrap;
+}
+.banners{
+padding: 30px 50px 20px 50px;
+gap: 20px;
+display: grid;
+grid-template-columns: 1fr 200px;
+}
+.banner{
+background: #FFDB89;
+width: 100%;
+min-width: 100px;
+min-height: 200px;
+font-size: 3rem;
+color: #fff;
+margin: 0 0 30px 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.footer{
+background: #FF3366;
+width: 100%;
+max-width: 1080px;
+min-width: 460px;
+color: #fff;
+margin: auto;
+padding: 15px;
+display: grid;
+justify-content: start;
+align-content: center;
+grid-template-columns: repeat(3, 1fr);
+}
+.banners{
+margin: 0;
+display: grid;
+grid-template-columns: 1fr 150px;
+}
+.footer1{
+display: grid;
+justify-content: start;
+align-content: center;
+grid-template-columns: repeat(3, 1fr);
+}
+@font-face {
+font-family: "112"; 
+src: url("MavenPro-VariableFont_wght.ttf") format("truetype"); 
+}
+</style>
+</head>
+<body>
+<header class="header">
+<a class="logo" href="1str.html" title="Главная страница"> KUN.RU</a>
+<nav class="nav">
+<a href="2str.html" class="nav-item"><center>Устройство ПК</center></a>
+<a href="3str.html" class="nav-item"><center>Ручная сборка + и -</center></a>
+<a href="4str.html" class="nav-item"><center>Сборка ПК</center></a>
+</nav>
+
+</header>
+<main class="main">
+<div class="banners">
+<span>
+<big><b>Корпус</b></big>
+<br>
+<p>То, что постоянно на виду. Прекрасный (не всегда), вместительный(не всегда) «ящик», внутри которого вы расположите все выбранные комплектующие. </p>
+</span>
+<img src="corp.jpg" align="right"/>
+
+<span>
+<big><b>Материнская плата</b></big>
+<br>
+<p>Это плата, которая является связующим звеном между всеми элементами компьютера, именно к ней подключаются все остальные комплектующие.</p>
+</span>
+<img src="mat.jpg" align="right"/>
+
+<span>
+<big><b>Процессор</b></big>
+<br>
+<p>Управляет всеми вычислительными процессами. Выглядит как маленький квадратик, имеющий снизу контакты.</p>
+</span>
+<img src="proc.jpg" align="right"/>
+<span>
+<big><b>Блок питания</b></big>
+<br>
+<p>Элемент ПК, похожий на коробку, который получает энергию от общей электросети и питает все компоненты компьютера.</p>
+</span>
+<img src="block.jpg" align="right"/>
+<span>
+<big><b>Оперативная память</b></big>
+<br>
+<p>Это очень быстрая временная память компьютера, в которой хранится информация о выполняемых в конкретный момент задачах.</p>
+</span>
+<img src="oper.jpg" align="right"/>
+<span>
+<big><b>Жесткий диск или SSD</b></big>
+<br>
+<p>Здесь компьютер хранит всю информацию: установленную систему, игры, программы, презентации. SSD быстрее чем жесткий диск, поэтому на него чаще всего ставят операционную систему.</p>
+</span>
+<span>
+<img src="hdd.jpg" align="right"/>
+<img src="m2.jpg" alt="Пример кода">
+<img src="nvme.jpg" alt="Пример кода">
+</span>
+<span>
+<big><b>Элементы охлаждения</b></big>
+<br>
+<p>Может быть сделана в виде вентилятора (кулера) со стальным или медным радиатором или жидкостной системы охлаждения («водянка»). Так же есть вентиляторы для охлаждения корпуса ПК.</p>
+</span>
+<span>
+<img src="cool.jpg" align="right"/>
+<img src="vod.jpg" alt="Пример кода">
+</span>
+<span>
+<big><b>Видеокарта</b></big>
+<br>
+<p>Устройство, отвечающее за преобразование битов и байтов информации в реальные визуальные образы, которые вы видите на мониторе. На ней также присутствуют вентиляторы для охлаждения чаще всего 1 или 2, также бывает 3 вентилятора, либо так называемая турбина.</p>
+</span>
+<img src="vid.jpg" align="right"/>
+</div>
+</main>
+<footer class="footer"  id="footer">
+<a href="1str.html" class="footer1">Home</a>
+<a href="https://vk.com/salomorja" class="footer1">Я в ВКонтакте</a>
+<a>Сайт создал Кун Денис</a>
+</footer>
+</body>
+</html>
